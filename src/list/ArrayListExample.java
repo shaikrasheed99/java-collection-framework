@@ -35,5 +35,19 @@ public class ArrayListExample {
         System.out.println("Synchronized list");
         List<Integer> synchronizedList = Collections.synchronizedList(list);
         System.out.println(synchronizedList);
+
+        System.out.println("Multi dimension ArrayList");
+        int x_axis = 2, y_axis = 3;
+        ArrayList<ArrayList<Integer>> space = new ArrayList<>(x_axis);
+        for (int i = 0; i < x_axis; i++) {
+            space.add(new ArrayList<>(y_axis));
+        }
+        space.get(0).add(1);
+        space.get(0).add(2);
+        space.get(0).add(3);
+        space.get(1).add(4);
+        space.get(1).add(5);
+        space.get(1).add(6);
+        System.out.println(space);
     }
 }
