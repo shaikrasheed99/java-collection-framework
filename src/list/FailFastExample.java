@@ -14,9 +14,9 @@ public class FailFastExample {
         System.out.println("Read elements of the list");
         System.out.println(list);
 
-        System.out.println("Throw ConcurrentModificationException");
+        System.out.println("Throw ConcurrentModificationException when we try to modify the original list");
         Iterator<Integer> iterator = list.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             iterator.next();
             list.add(40);
         }
