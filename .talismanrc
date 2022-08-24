@@ -1,3 +1,5 @@
 fileignoreconfig:
 - filename: src/serialization/Employee.java
   checksum: 1cce4a92d6a8c3cdedca4ef55fa552574d3bb9422cb83becfb231f2cfad90893
+- filename: src/deserialization/DeserializationExample.java
+  checksum: ef54022b9255ec3d137f758f7f12f3f9b3bb4e5073637bc47002b367f685a31b
